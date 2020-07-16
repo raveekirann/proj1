@@ -23,8 +23,9 @@ def index():
         name = userDetails['name']
         email = userDetails['email']
         dob = userDetails ['date']
+        gender = userDetails ['gender']
         cur = mysql.connection.cursor()
-        cur.execute("INSERT INTO employees (name, email, dob) VALUES(%s, %s, %s)",(name,email,dob))
+        cur.execute("INSERT INTO employees (name, email, dob, gender) VALUES(%s, %s, %s, %s)",(name,email,dob,gender))
         mysql.connection.commit()
         cur.close()
         return redirect('/users')
