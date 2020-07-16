@@ -1,0 +1,4 @@
+mysql_host: '172.17.0.4'
+mysql_user: 'ravee'
+mysql_password: 'pass'
+mysql_db: 'empdb'
