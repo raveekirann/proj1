@@ -1,15 +1,11 @@
 version: '3'
 services:
   mysql1:
-    build: 
-      context: .
-      dockerfile: Dockerfile_mysql
+    image: raveekirann/mysqlp1:part1
     ports:
       - "3306:3306"
 
   flask1:
-    build:
-      context: .
-      dockerfile: ./Dockerfile_flask
+    image: raveekirann/flaskp1:part1
     ports:
       - "5000:5000"
